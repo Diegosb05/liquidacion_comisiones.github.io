@@ -35,29 +35,82 @@ Postcondiciones: Promedio de ventas calculado
 
  
 
+ #DIAGRAMA DE FLUJO
  
 
  
+![Diagrama en blanco](https://github.com/Diegosb05/liquidacion_comisiones.github.io/assets/133070932/3f6a86a5-dd3a-4eaa-bf00-3a04cc8631f5)
 
  
+
 
 # SEUDOCODIGO
 
 Inicio
 
-    Caracteres: identificaciones [50], nombres [50], ventatotal [50]
+    Caracteres: identificaciones [50], nombres [50], aerolineas [50]
 
-    Tabla de pago: número ingresado por el usuario
+    Real: lunes [50], martes [50], miercoles [50], jueves [50], viernes [50]
 
-    Caracteres: identificacion, nombre, venta total
+    Caracteres: identificacion, nombre, aerolinea
 
-    Entero: porcentaje de pago, i
+    Entero: numeroVendedores, i
 
-    Real: 
+    Real: vLunes, vMartes, vMiercoles, vJueves, vViernes, promedio <- 0
 
-    Imprimir: ‘Valor a pagar’
+    Imprimir: ‘Digite el número de vendedores:’
 
- 
+    Asignar: numeroVendedores
+
+    Para i=0 hasta numeroVendedores - 1, 1
+
+    Imprimir: ‘Digite la identificación del vendedor:’
+
+    Asignar: identificacion
+
+    Imprimir: ‘Digite el nombre del vendedor:’
+
+    Asignar: nombre
+
+    Imprimir: ‘Digite nombre de la aerolinea:’
+
+    Asignar: aerolinea
+
+    Imprimir: ‘Digite ventas del lunes de ’ + nombre
+
+    Asignar: vLunes
+
+    Imprimir: ‘Digite las ventas del martes de ’ + nombre
+
+    Asignar: vMartes
+
+    Imprimir: ‘Digite las ventas del miercoles de ’ + nombre
+
+    Asignar: vMiercoles
+
+    Imprimir: ‘Digite las ventas del jueves de ’ + nombre
+
+    Asignar: vJueves
+
+    Imprimir: ‘Digite las ventas del viernes de ’ + nombre
+
+    Asignar: vViernes
+
+    identificaciones[i] <- identificacion
+
+    nombres [i] <- nombre
+
+    aerolineas [i] <- aerolinea
+
+    vLunes[i] <- lunes
+
+    vMartes[i] <- martes
+
+    vMiercoles[i] <- miercoles
+
+    vJueves[i] <- jueves
+
+    vViernes[i] <- viernes
 
     finPara
 
