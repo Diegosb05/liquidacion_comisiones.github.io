@@ -5,19 +5,70 @@ asesor de acuerdo con la cantidad de ventas efectuadas durante el mes. Este nego
 vendedores de acuerdo a la cantidad de vehículos vendidos y basado en una tabla de pagos cacuula el valor a pagar
 
 
+# ANALISIS DEL EJERCICIO
 
+![Requerimiento](https://github.com/Diegosb05/liquidacion_comisiones.github.io/assets/133070932/ac456149-3125-499e-9f53-648063f8b2b0)
 
-Yo como gerente de ventas.
-Quiero un sistema para poder ingresar las ventas registradas de un asesor y basado en una tabla 
-Para de estar forma calcular el porcentaje de pago basado en la venta monetaria efectuada
+# CASOS DE USO
 
-Escenarios
-Given que soy un gerente de ventas
-Y que ingreso correctamente la indentificación del vendedor
-Y que ingreso correctamente el nombre del vendedor
-Y que ingreso correctamente la venta total efectuada
+![Casos de uso](https://github.com/Diegosb05/liquidacion_comisiones.github.io/assets/133070932/e50c44ff-3456-41eb-9e2a-4fc2fc2bff7a)
 
-When seleccione la opción calcular valor a pagar 
+Nombre: Calcular promedio de liquidación por asesor
 
-Then debo poder guardar la información del vendedor como la identificación y el nombre completo 
-Y la venta efectuada
+Actores: gerente de ventas
+
+Proposito: Guardar identificacion, nombre, venta efectuada, y el total se debe calcular por el 3%
+
+Curso normal de eventos:
+
+1. El gerente de ventas  ingresa la venta efectuada por el vendedor.
+
+2. El gerente ingresa la identificacion, nombre, valor total de venta.
+
+3. Se calcula el promedio a partir de:
+
+    ((venta registrada) * número ingresado por el usuario%.
+
+4. Se Muestra el promedio de pago de comisión
+
+Postcondiciones: Promedio de ventas calculado
+
+ 
+
+ 
+
+ 
+
+ 
+
+# SEUDOCODIGO
+
+Inicio
+
+    Caracteres: identificaciones [50], nombres [50], ventatotal [50]
+
+    Tabla de pago: número ingresado por el usuario
+
+    Caracteres: identificacion, nombre, venta total
+
+    Entero: porcentaje de pago, i
+
+    Real: 
+
+    Imprimir: ‘Valor a pagar’
+
+ 
+
+    finPara
+
+    Para i=0 hasta numeroVendedores -1, 1
+
+    promedio <-
+
+    promedio +((vLunes[i]+vMartes[i]+vMiercoles[i]+vJueves[i]+vViernes[i])/5)numeroVendedores
+
+    finPara
+
+    Imprimir: ‘El promedio es:’ + promedio
+
+Fin
